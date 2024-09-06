@@ -3,13 +3,16 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-
+// Changement des variables
 $primary: #906427;
 $secondary: #B6AC97;
 $dark:#392C1E;
 $black:  #292222;
 $font-family-sans-serif: "Montserrat", sans-serif !default;
+$font-family-serif: "Hind Madurai", serif !default;
 
+
+//Importation de Sass selon la méthodes vu dans le site Boostrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
