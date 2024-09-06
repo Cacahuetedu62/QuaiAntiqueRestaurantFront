@@ -2,3 +2,23 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 
 @import 'custom';
+
+// pour changer l'espacement du footer = padding
+// c'est l'espace entre le contenu et la bordure d'un élément
+// le mot footer est repris du footer de l'index
+// des que je motifie aussi je dois faire WATCH SASS en bas
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+// definir une taille du MAIN pour qu'elle ne passe pas en dessous du FOOTER
+main{margin-bottom: 250pxl;}
+
+footer.footer{
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
