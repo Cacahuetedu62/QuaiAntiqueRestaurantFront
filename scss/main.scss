@@ -9,12 +9,14 @@
 // des que je motifie aussi je dois faire WATCH SASS en bas
 
 html{
-    position: relative;
+    position:relative;
     min-height: 100%;
 }
 
-// definir une taille du MAIN pour qu'elle ne passe pas en dessous du FOOTER
-main{margin-bottom: 250pxl;}
+// 154px c'est la taille de la marge que j'ai trouver dans la console (F12)
+main{
+    margin-bottom: 200px;
+}
 
 footer.footer{
     padding: 15px;
@@ -23,9 +25,12 @@ footer.footer{
     width: 100%;
 }
 
+// definir une taille du MAIN pour qu'elle ne passe pas en dessous du FOOTER
+main{margin-bottom: 250pxl;}
+
 // pour changer la police des paraghrapes (régles qui dit que tout ce qui est ds un paragraphe <p> devrat être SERIF
 p{
-    font-familly: $font-familly-serif;
+    font-family: $font-family-serif;
     font-size: 18px;
 }
 
@@ -57,4 +62,35 @@ p{
         align-items: center;
         justify-content: center;
     }
+}
+
+.text-justify{text-align: justify;}
+
+.image-card{
+    position:relative;
+    &:hover{
+        .titre-image{
+            opacity: 1;
+        }
+        img{
+            filter: brightness(0.3);
+        }
+    }
+
+    img{
+        transition: all 0.3s;
+    }
+
+    .titre-image{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+
+h1{
+    font-family: "Protest Guerrilla", sans-serif;
 }
