@@ -38,6 +38,7 @@ p{
 //Ce que j'ai repris pour le fond avec l'image-->
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position: absolute;
@@ -93,4 +94,8 @@ p{
 
 h1{
     font-family: "Protest Guerrilla", sans-serif;
+}
+
+.form-label{
+    color: $primary;
 }
