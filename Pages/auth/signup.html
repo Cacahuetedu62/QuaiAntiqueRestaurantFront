@@ -8,34 +8,49 @@
     <div class="mb-3">
       <label for="NomInput" class="form-label">Nom</label>
       <input type="text" class="form-control" id="NomInput" placeholder="Votre nom">
+      <div class="invalid-feedback">
+        Nom requis
+       </div>
     </div>
 
     <div class="mb-3">
       <label for="PrenomInput" class="form-label">Prenom</label>
       <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prenoom">
+      <div class="invalid-feedback">
+        Prenom requis
+       </div>
     </div>
 
     <div class="mb-3">
         <label for="EmailInput" class="form-label">Email</label>
         <input type="email" class="form-control" id="EmailInput" placeholder="Tom@sauyer.c'estl'amerique!">
+        <div class="invalid-feedback">
+          Le mail n'est pas au bon format
+         </div>
       </div>
 
       <div class="mb-3">
         <label for="passwordInput" class="form-label">Mot de passe</label>
         <input type="Password" class="form-control" id="PasswordInput">
+        <div class="invalid-feedback">
+          Le mot de passe n'est pas assez robuste : Au moins 8 caractères, 1 lettre majuscule, 1 minuscule, 1 chiffre et un caractère special 
+         </div>
+         <div class="valid-feedback">
+          Le mot de passe est robuste
+         </div>
       </div>
 
       <div class="mb-3">
         <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
-        <input type="Password" class="form-control" id="PasswordInput">
-      </div>
+        <input type="Password" class="form-control" id="ValidatePasswordInput">
+              </div>
 
       <div class="text-center">
-        <button type="submit" class="btn btn-primary">Inscription</button>
+        <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
            </div>
      </form>
      <div class="text-center pt-3">
-       <a href = "./Pages/auth/sigin.html"> Vous avez déja un compte ? Conectez-vous ici !</a>
+       <a href = "/Pages/auth/signin.html"> Vous avez déja un compte ? Conectez-vous ici !</a>
    </div>      
 
 
