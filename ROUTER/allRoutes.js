@@ -7,7 +7,7 @@ export const allRoutes = [
  
 //route au dessus ok
 
-    new Route("/signin", "connexion", "/Pages/auth/signin.html"),
+    new Route("/signin", "Connexion", "/Pages/auth/signin.html","/js/auth/signin.js"),
    
     new Route("/signup", "Inscription", "/pages/auth/signup.html","/js/auth/signup.js"),
     new Route("/editPassword", "Changement de mot de passe", "/Pages/auth/editPassword.html"),
@@ -18,7 +18,7 @@ export const allRoutes = [
    //Mise en page ok, bouton annuler pas ok, il ne redirige pas vers "annulion de la reservation" AnnulationReservation.html
     new Route("/AnnulationReservation", "Annulation de la réservation", "/Pages/reservations/AnnulationReservation.html"),
     
-    new Route("/allResa","Vos réservations", "/Pages/reservations/AllResa.html"),
+    new Route("/AllResa","Vos réservations", "/Pages/reservations/AllResa.html"),
     //Ne trouve pas la route
 ]
 
