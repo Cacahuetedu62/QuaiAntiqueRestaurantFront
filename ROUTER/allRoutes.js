@@ -4,22 +4,13 @@ export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html"),
     new Route("/galerie", "La galerie", "/pages/galerie.html"), 
     new Route("/account", "Mon compte", "/pages/auth/account.html"),
- 
-//route au dessus ok
-
-    new Route("/signin", "Connexion", "/Pages/auth/signin.html","/js/auth/signin.js"),
-   
+    new Route("/signin", "Connexion", "/pages/auth/signin.html","/js/auth/signin.js"),   
     new Route("/signup", "Inscription", "/pages/auth/signup.html","/js/auth/signup.js"),
-    new Route("/editPassword", "Changement de mot de passe", "/Pages/auth/editPassword.html"),
-//Arrive bien à la page connexion mais pas de mise en forme, navbar, photos etc...
- 
+    new Route("/editPassword", "Changement de mot de passe", "/pages/auth/editPassword.html"),
+    new Route("/reserver", "Réserver","/pages/reservations/reserver.html"),
+    new Route("/AnnulationReservation", "Annulation de la réservation", "/pages/reservations/AnnulationReservation.html"),    
+    new Route("/AllResa","Vos réservations", "/pages/reservations/AllResa.html"),
 
-   new Route("/reserver", "Réserver","/pages/reservations/reserver.html"),
-   //Mise en page ok, bouton annuler pas ok, il ne redirige pas vers "annulion de la reservation" AnnulationReservation.html
-    new Route("/AnnulationReservation", "Annulation de la réservation", "/Pages/reservations/AnnulationReservation.html"),
-    
-    new Route("/AllResa","Vos réservations", "/Pages/reservations/AllResa.html"),
-    //Ne trouve pas la route
 ]
 
 

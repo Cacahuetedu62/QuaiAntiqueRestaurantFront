@@ -7,9 +7,10 @@ btnSignin.addEventListener("click", checkCredentials);
 function checkCredentials(){ 
 
 
-if(EmailInput.value == "test@mail.com" && PasswordInput == "123"){
-alert("enfin ca fonctionne !!!");
-window.location.replace("/");
+if(EmailInput.value == "test@mail.com" && PasswordInput.value == "123"){
+    const token = "blablabla";
+    setToken(token);
+    window.location.replace("/");
 }
 
 else{
