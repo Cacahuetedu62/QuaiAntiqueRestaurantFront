@@ -10,6 +10,7 @@ function checkCredentials(){
 if(EmailInput.value == "test@mail.com" && PasswordInput.value == "123"){
     const token = "blablabla";
     setToken(token);
+    setCookie(roleCookieName,"admin",7);
     window.location.replace("/");
 }
 
