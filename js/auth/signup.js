@@ -10,6 +10,7 @@ inputPreNom.addEventListener("keyup", validateForm);
 inputMail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
 inputValidationPassword.addEventListener("keyup", validateForm);
+btnValidation.addEventListener('click', InscrireUtilisateur);
 
 
 function validateForm(){
@@ -86,4 +87,36 @@ function validateRequired(input){
     }
 }
 
-
+function InscrireUtilisateur (){
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    let raw = JSON.stringify({
+      "firstName": "Test fetch",
+      "lastName": "test fetch",
+      "email": "testdepuisQuaaiANtiue@email.com",
+      "password": "Azerty11"
+    });
+    
+    let requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch("https://127.0.0.1:8000/api/registration", requestOptions)
+  
+    .then(response => {
+        if(response.ok){
+            return response.json();
+        }
+        else{
+            alert("Erreur lors de l'inscription");
+        }
+    })
+    .then(result => {
+        alert("Bravo "+dataForm.get("prenom")+", vous êtes maintenant inscrit, vous pouvez vous connecter.");
+        document.location.href="/signin";
+    })
+    .catch(error => console.log('error', error));}
